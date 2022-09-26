@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeX-compiler</title>
+</head>
+
+<body>
+        <h1>CodeX Compiler</h1>
+        <form id="myform" name="myform" method="post" action="compilecode">
+            <label for="code">
+                <h3>Write code here</h3>
+            </label>
+
+            <textarea name="code" id="code" cols="100" rows="10"></textarea><br>
+            <label for="input">
+                <h3>Input</h3>
+            </label>
+            <textarea name="input" id="input" cols="100" rows="10"></textarea><br>
+            <label for="lang">Language:</label>
+            <select name="lang" id="lang">
+                <option value="" selected>Select</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Python">Python</option>
+            </select>
+            Compiler with Input:
+            <input type="radio" name="inputRadio" id="inputRadio" value="true">Yes
+            <input type="radio" name="inputRadio" id="inputRadio" value="false">No
+            <br><br>
+            <input type="submit" value="submit" name="submit">
+        </form>
+</body>
+
+</html>
